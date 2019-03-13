@@ -1,0 +1,7 @@
+<app-menu (home)="navToHome()" (gallery)="navToGallery()" (about)="navToAbout()"></app-menu>
+<app-home *ngIf="page[0]"></app-home>
+<div *ngIf="page[1]">
+	<app-gallery></app-gallery>
+	<app-blankpage></app-blankpage>
+</div>
+<app-about *ngIf="page[2]"></app-about>

@@ -1,0 +1,67 @@
+<div class="overlay" [hidden]="!galleryItemClicked" (click)="highlightPiece()">
+	<div class="table-overlay">
+		<div class="cell">
+			<img src="assets/images/gallery/{{galleryItems[currentGalleryItem].img}}" class="img-fluid highlight-img">
+		</div>
+	</div>
+</div>
+<div id="wrapper-gallery" class="wrapper-gallery" *ngIf="!mobile">
+	<div class="grey-box">
+		<p class="collection">collection {{currentGalleryItem + 1}}/{{this.galleryItems.length}}</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="table">
+						<div class="cell">
+							<img id="img" src="assets/images/gallery/{{galleryItems[currentGalleryItem].img}}" class="img-fluid gallery-img" (click)="highlightPiece()">
+						</div>			
+					</div>
+				</div>
+				<div class="col-md-7 description">
+					<div class="table">
+						<div class="cell-text">
+							<div class="title">
+								<u>{{ galleryItems[currentGalleryItem].name }}</u>
+							</div>
+							<br>
+							<br>
+							<div class="additional-info">
+								<p>{{ galleryItems[currentGalleryItem].description }}</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gallery-items" (swipeup)="changeItem(currentGalleryItem+1)" (swipedown)="changeItem(currentGalleryItem-1)">
+		<ul>
+			<li *ngFor="let item of galleryItems; let i = index" id="listItem{{i}}" (click)="changeItem(i)">
+				<span [ngClass]="{'phc': i == currentGalleryItem, 'hover': !disabled}">{{ item.name }}</span>
+			</li>
+		</ul>
+	</div>
+	<header>GALLERY</header>
+</div>
+
+<div *ngIf="mobile">
+	<div class="grey-box">
+		<p class="collection">collection {{currentGalleryItem + 1}}/{{this.galleryItems.length}}</p>
+		<div class="table">
+			<div class="cell">
+				<img id="img" src="assets/images/gallery/{{galleryItems[currentGalleryItem].img}}" class="img-fluid gallery-img" (click)="highlightPiece()">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="left-arrow table-2" (click)="changeItem(currentGalleryItem - 1)">
+			<i class="fas fa-angle-left cell"></i>
+		</div>
+		<div class="right-arrow table-2" (click)="changeItem(currentGalleryItem + 1)">
+			<i class="fas fa-angle-right cell"></i>
+		</div>
+		<div class="center table-2">
+			<span class="cell">{{ galleryItems[currentGalleryItem].name }}</span>
+		</div>
+	</div>
+</div>

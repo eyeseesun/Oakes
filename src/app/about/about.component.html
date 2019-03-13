@@ -1,0 +1,21 @@
+<header class="about">ABOUT</header>
+<div class="table" *ngIf="mobile">
+	<div class="cell">
+		<p>Hey, I'm Jeremy Oakes</p>
+		<br>
+		<p>I'm a <span class="red">painter</span> with a <span class="gold">passion</span> for <span class="blue">public pieces</span></p>
+		<br>
+		<p>Preferably not in portapotties</p>
+		<br>
+		<p class="red">(That means I specialize in wall murals)</p>
+	</div>
+</div>
+
+<div *ngIf="!mobile">
+	<p>Hey, I'm Jeremy Oakes</p>
+	<p>I'm a <span class="red">painter</span> with a <span class="gold">passion</span> for <span class="blue">public pieces</span></p>
+	<p>Preferably not in portapotties</p>
+	<p class="red">(That means I specialize in wall murals)</p>
+</div>
+
+<img class="j-heads" src="assets/images/jeremy_heads.png" alt="Jeremy's heads">

@@ -1,0 +1,97 @@
+#intro {
+	position: relative;
+	opacity: 1;
+}
+
+#home-par {
+	position: relative;
+	bottom: 0;
+}
+
+.art .paint .eat {
+	opacity: 1;
+}
+
+#octo {
+	opacity: 0.85;
+}
+
+header {
+	position: relative;
+	right: 80px;
+	bottom: 140px;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 200px;
+	color: black;
+	letter-spacing: 4px;
+}
+
+h1 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 50px;
+	color: black;
+	margin: 25px 0px 15px 150px;
+	letter-spacing: 4px;
+}
+
+p {
+	position: relative;
+	margin: 0px 0px 5px 150px;
+	font-size: 36px;
+	letter-spacing: 4px;
+}
+
+img {
+	position: absolute;
+	right: -20px;
+	height: 80vh;
+	top: 25vh;
+	opacity: .7;
+}
+
+.blue {
+	color: #00a77f;
+}
+
+.red {
+	color: #f6131e;
+}
+
+.gold {
+	color: #b68425;
+}
+
+.wrapper {
+	height: 102vh;
+}
+
+
+@media only screen and (max-height: 450px) {
+	#intro {
+		top: -175px;
+		left: -75px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	header {
+		font-size: 60px;
+		right: 10px;
+		bottom: 55px;
+	}
+
+	img {
+		height: 60vh;
+		top: 45vh;
+	}
+
+	p {		
+		margin: 0px 0px 5px 15px;
+	}
+
+	h1 {
+		margin: 25px 0px 15px 15px;
+	}
+
+}

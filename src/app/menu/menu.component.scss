@@ -1,0 +1,150 @@
+.fa-bars {
+	position: fixed;
+	right: 0px;
+	margin: 15px 15px 0 0;
+	font-size: 3em;
+	color: black;
+	z-index: 50;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:active {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.fa-bars:hover {
+	cursor: pointer;
+}
+
+p {
+	position: relative;
+	float: right;
+	font-size: 50px;
+	color: white;
+	padding: 0px 20px 0px 0px;
+	font-weight: 300;
+}
+
+p:hover {
+	cursor: pointer;
+}
+
+ul {
+	position: relative;
+	margin: 100px 0px 25px 40px;
+}
+
+li {
+	color: white;
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-weight: 300;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+.expanded-menu {
+	position: fixed;
+	right: -300px;
+	width: 300px;
+	height: 100vh;
+	background-color: black;
+	z-index: 100;
+	bottom: 0vh;
+}
+
+.line {
+	width: 90%;
+	height: 3px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.homeUnderline, .aboutUnderline, .workUnderline, .contactUnderline {
+	width: 0;
+	height: 1px;
+	background-color: white;
+}
+
+.social-container {
+	position: relative;
+	width: 90%;
+	height: 35vh;
+	margin: 60px auto;
+	color: white;
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 2px;
+	text-align: center;
+	opacity: 0;
+}
+
+.social-icons {
+	margin: 35px 0;
+	font-size: 40px;
+}
+
+.fa-envelope {
+	position: relative;
+	top: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.expanded-menu {
+		right: -100vw;
+		width: 100vw;
+	}
+
+	li {
+		font-size: 40px;
+	}
+
+	.menu-content-nav-items {
+		position: relative;
+		top: -15px;
+	}
+
+}
+
+@media only screen and (max-height: 450px) {
+	
+	li {
+		font-size: 22px;
+		margin: 5px 0;
+	}
+
+	.expanded-menu {
+		right: -100vw;
+		width: 200px;
+	}
+
+	.social-container {
+		margin: 30px auto;
+		font-size: 12px;
+	}
+
+	.social-icons {
+		font-size: 22px;
+	}
+
+	ul {
+		margin: 50px 0px 25px 30px;
+	}
+
+	.line {
+		height: 2px;
+	}
+
+}

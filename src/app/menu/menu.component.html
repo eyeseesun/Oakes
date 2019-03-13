@@ -1,0 +1,27 @@
+<i class="fas fa-bars" (click)="toggleMenu()"></i>
+
+<div class="expanded-menu">
+	<p class="menu-content" (click)="toggleMenu()">X</p>
+	<div class="menu-content menu-content-nav-items">
+		<ul>
+			<li class="home" (click)="navToHome()">home</li>
+			<div class="homeUnderline"></div>
+			<li class="work" (click)="navToGall()">work</li>
+			<div class="workUnderline"></div>
+			<li class="about" (click)="navToAbout()">about</li>
+			<div class="aboutUnderline"></div>
+			<li class="contact" (click)="contactInfo()">contact</li>
+			<div class="contactUnderline"></div>
+		</ul>
+		<div class="line"></div>
+		<div class="social-container">
+			<i class="far fa-envelope"></i>
+			<span>joakes@gmail.com</span>
+			<br>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/jeremy.c.oakes.9"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/joakeart/"><i class="fab fa-instagram"></i></a>
+			</div>		
+		</div>
+	</div>
+</div>
